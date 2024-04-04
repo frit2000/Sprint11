@@ -159,7 +159,6 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-
 	// удаление новой посылки
 	err = service.Delete(p.Number)
 	if err != nil {
