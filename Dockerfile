@@ -6,8 +6,8 @@ COPY . .
 
 ENV CGO_ENABLED=0 GOOS=linux GOARCH=amd64
 
-RUN  go build -o /sprint11
-
 RUN go mod download
+
+RUN  go build -o /sprint11
 
 CMD ["/sprint11"] 
